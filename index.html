@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importacion externa-->
+    <!--splide-->
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css" rel="stylesheet">
+    <!--ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="./img/584044.png" type="image/x-icon">
+    <!--de mi proyecto-->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <title>Portafolio</title>
+
+</head>
+<body class="dark">
+
+    <header class="header">
+        <iframe 
+        src="./particles/particules.html" frameborder="0">
+        </iframe>
+        <nav class="header_nav">
+            <div class="header_star">
+                <a class="icon icon_home" href="#home"><ion-icon name="home"></ion-icon></a>
+            </div>
+            <div class="header_center">
+                <a class="icon icon_me" href="#me"><ion-icon name="person"></ion-icon></a>
+                <a class="icon icon_skills" href="#skills"><ion-icon name="hammer"></ion-icon></a>
+                <a class="icon icon_proyects" href="#proyects"><ion-icon name="albums"></ion-icon></a>
+                <a class="icon icon_estudies" href="#estudies"><ion-icon name="school"></ion-icon></a>
+                <a class="icon icon_achievements" href="#achievements"><ion-icon name="medal"></ion-icon></a>
+                <a class="icon icon_cv" download href="./src/CV en español.docx"><ion-icon name="document-text"></ion-icon></a>
+            </div>
+            <div class="header_end">
+                <a class="icon icon_lenguage" href="./english.html"><!--<img src="./img/esp.png" alt="language">-->
+                    <img src="./img/eng.png" alt="language"></a>
+                <a class="icon icon_volume"><!--<ion-icon name="volume-high"></ion-icon>-->
+                    <ion-icon name="volume-mute"></ion-icon>
+                    <audio loop src="./sound/sound2.mp3"></audio>
+                </a>
+                <a class="icon icon_mode"><!--<ion-icon name="moon"></ion-icon>-->
+                    <ion-icon name="sunny"></ion-icon></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <h1>Programador web full stack</h1>
+            <h2>William Rojas</h2>
+            <p>Estudiante cursando actualmente el programa de desarrollo wed full-stack de la academia online "Academlo".</p>
+            <figure>
+                <img src="./img/imagen perfil.jpg" alt="
+                Profile">
+            </figure>    
+        </section>
+
+        <section id="me" class="section about_me">
+            <h2>Sobre mi</h2>
+            <p>Nacido en Venezuela, criado en Carabobo/Valencia, en estos momentos empleando esfuerzos en el aprendizaje de nuevos conocimientos para ampliar sus frontera en el ámbito laboral y desarrollo de nuevas habilidades.</p>
+            <h3>Aficiones</h3>
+            <ul>
+                <li>📔Leer</li>
+                <li>🎞Ver series y peliculas</li>
+                <li>⌚Tiempo en familia</li>
+            </ul>
+            <iframe class="map
+            " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111957.11218728108!2d-68.05405007782794!3d10.171481783248593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses!2sve!4v1701387889906!5m2!1ses!2sve" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="skills" class="section skills_sh">
+            <h2>Habilidades</h2>
+            <article class="soft_skills">
+                <h3>Blandas:</h3>
+                 <ul>
+                    <li>👍🏾Aplicación en el aprendizaje de tecnología de software.</li>
+                    <li>👍🏾Esfuerzo en la colaboración de equipo para un mejor desarrollo.</li>
+                </ul>
+            </article>
+            <article class="hard_skills">
+                <h3>Duras:</h3>
+                <figure class="slider_skills_h">
+                    <img src="./img/skills/JavaScript.png" alt="hard skills">
+                    <img src="./img/skills/html5.png" alt="hard skills">
+                    <img src="./img/skills/css3.png" alt="hard skills">
+                    <img src="./img/skills/react.png" alt="hard skills">
+                    <img src="./img/skills/nodejs.png" alt="hard skills">
+                </figure>
+                <div>
+                    <button class="btn_prev"><</button>
+                    <button class="btn_next">></button>
+                </div>
+            </article>         
+        </section>
+
+        <section id="proyects" class="section  proyects_slider">
+            <h2>Proyectos</h2>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="estudies" class=" section education">
+            <h2>Educación</h2>
+            <article class="academlo">
+                <h3>Academlo</h3>
+                <ul>
+                    <li>🖋Estudios en de fundamentos de JavaScript.</li>
+                    <li>🖋Estudios en de fundamentos de HTML.</li>
+                    <li>🖋Estudios en de fundamentos de CSS.</li>
+                </ul>
+            </article>
+            <article class="others">
+                <h3>Otros</h3>
+                <ul>
+                    <li>🖋Operador de servicios de fumigación.</li>
+                    <li>🖋Habilidades básicas de servicio al cliente.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="achievements" class="section achievements">
+            <h2>Logros</h2>
+            <figure>
+                <img src="./img/aplausos.gif" alt="
+                applause">
+            </figure>
+            <p>
+                Actualmente dando los primeros pasos como estudiante de Academlo en el aprendizaje de tecnologías como JavaScript, HTML y CSS. Considerándolo como un logro personal al emplear tiempo y esfuerzo para el desarrollo de nuevas habilidades laborales en aras de búsqueda de nuevas perspectivas de trabajo.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer active">
+        <a class="icon icon_linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a class="icon icon_github" href="#"><ion-icon name="logo-github"></ion-icon></a>
+    </footer>
+    
+</body>
+</html>

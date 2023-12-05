@@ -1,0 +1,43 @@
+@media (min-width: 850px) {
+ 
+.icon_home:hover::after {
+    content: 'Home';
+}
+.icon_me:hover::after {
+    content: 'About me';
+}
+.icon_skills:hover::after {
+    content: 'Skills';
+}
+.icon_proyects:hover::after {
+    content: 'Proyects';
+}
+.icon_estudies:hover::after {
+    content: 'Education';
+}
+.icon_achievements:hover::after {
+    content: 'Achievements';
+}
+.icon_cv:hover::after {
+    content: 'Download CV';
+}
+.icon_lenguage:hover::after {
+    content: 'Page in spanish';
+}
+.icon_volume:hover::after {
+    content: 'Sound/Silence';
+}
+.icon_mode:hover::after {
+    content: 'Light/Dark mode';
+}
+.icon_linkedin:hover::after {
+    content: 'Contact me';
+    bottom: 50px;
+    right: 0;
+}
+.icon_github:hover::after {
+    content: 'My github';
+    top: 5px;
+    right: 40px;        
+}
+}
