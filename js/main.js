@@ -1,3 +1,39 @@
+/* Funcion para alterar de h1 */
+function changeText(label) {
+    const phrase = label.textContent;
+    let text = '';
+    for (const i of phrase) {
+        if ( i !== ' ') {
+            text += `<b>${i}</b>`;
+        } else {
+            text += `<u>${i}</u>`;            
+        }
+    }
+    label.innerHTML = text;
+}
+/*Funcion para texto animado */
+function animatedText(label) {
+    const text = document.querySelectorAll('b');
+    let i = 0;
+    const print = setInterval(() => {
+        text[i].classList.toggle('zoom');
+        i++
+        if (i >= text.length) {
+            clearInterval(print);
+            i = 0;
+            const clear = setInterval(() => {
+                text[i].classList.toggle('zoom');
+                i++;
+                if (i >= text.length) {
+                    clearInterval(clear);        
+                }
+            }, 80)
+                 
+        }
+    }, 80)
+
+    
+}
 /* funcion para el slider de habilidades duras */
 function skills() { 
     const skillH = document.querySelector('.slider_skills_h');
@@ -77,6 +113,7 @@ function sound(){
         }
     });
 }
+/*Funcion para conseguir la API */
 async function getApi() {
     const url = 'https://fundametos-api-porfolios-dev-exsn.2.ie-1.fl0.io/api/v1/projects';
     try {
@@ -88,6 +125,7 @@ async function getApi() {
         console.log(error);
     }
 }
+/*Funcion para visualizar proyectos*/
 function printproyects(projects) {
     const list2 = document.querySelectorAll('.splide__slide');
     const path = location.href.split('/').at(-1).at(0);
@@ -121,6 +159,7 @@ function printproyects(projects) {
         list2[i].innerHTML = html;
     });
 }
+/*Funcion de eslaidar de proyectos */
 function slider() {
     const splide = new Splide( '.splide',{
         type   : 'loop',
@@ -135,14 +174,19 @@ function slider() {
     });
     splide.mount();
 }
+/*Funcion de botones de contacto */
 function social() {
+    const h1 = document.querySelector('h1');
     const nav = document.querySelector('.header_nav');
     const footer = document.querySelector('.footer');
     footer.classList.toggle('active');
+    changeText(h1);
+    animatedText(h1);
     setTimeout(() => {
         footer.classList.toggle('active');
     }, 2000);
     nav.addEventListener('click', () => {
+        animatedText(h1);
         setTimeout(() => {
             footer.classList.toggle('active');
         }, 2000);
@@ -153,6 +197,9 @@ async function main () {
     const saveProjects = JSON.parse(localStorage.getItem('save'));
     console.log(saveProjects);
     const projects = JSON.parse(localStorage.getItem('save')) || await getApi();
+    const h1 = document.querySelector('h1');
+    changeText(h1);
+    animatedText(h1);
     printproyects(projects);
     skills();
     mode();

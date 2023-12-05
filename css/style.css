@@ -21,12 +21,15 @@ body {
 body.dark {
     background-color: black;
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     width: 20px;
 }
 ul {
@@ -37,6 +40,46 @@ button {
     color: inherit;
     display: inline-block;
 }
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+p {
+    font-size: 17px;
+}
+li {
+    font-size: 17px;
+}
+
+b {
+    display: inline-block;
+    width: -.30rem;
+    cursor: pointer;
+    transition: .5s;
+    transition-delay: .5s;   
+}
+b:hover {
+    background-color: var(--header_nav-color);
+    text-shadow: -2.5px 2.5px 2.5px var(--other-color);
+    transform: scale(1.20);
+    transition: transform .5s;
+}
+b.zoom {
+    background-color: var(--header_nav-color);
+    text-shadow: -2.5px 2.5px 2.5px var(--other-color);
+    transform: scale(1.20);
+    transition: transform .5s;
+}
+u {
+    display: inline-block;
+    width: .5rem;
+}
+
 
 .header iframe {
     height: 100vh;
@@ -94,9 +137,18 @@ main {
 .about_me iframe {
     height: 40%;
 }
+.about_me p {
+    padding: 20px;
+}
+.about_me li {
+    padding: 5px 0;
+}
 
 .skills_sh {
     align-items: start;
+}
+.soft_skills li {
+    padding: 15px 0;
 }
 .hard_skills {
     position: relative;
@@ -161,6 +213,13 @@ main {
 .education {
     justify-content: space-evenly
 }
+.academlo li {
+    padding: 15px 0;
+}
+.others li {
+    padding: 15px 0;
+}
+
 
 .achievements figure {
     height: 50%;
@@ -209,6 +268,22 @@ main {
 }
 
 @media (min-width: 850px) {
+    h1 {
+        font-size: 58px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 22px;
+    }
+    li {
+        font-size: 22px;
+    }
+    
     a {
         font-size: 30px;
         width: 30px;
