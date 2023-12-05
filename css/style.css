@@ -64,13 +64,11 @@ b {
     transition-delay: .5s;   
 }
 b:hover {
-    background-color: var(--header_nav-color);
     text-shadow: -2.5px 2.5px 2.5px var(--other-color);
     transform: scale(1.20);
     transition: transform .5s;
 }
 b.zoom {
-    background-color: var(--header_nav-color);
     text-shadow: -2.5px 2.5px 2.5px var(--other-color);
     transform: scale(1.20);
     transition: transform .5s;
@@ -233,7 +231,6 @@ main {
     bottom: 10px;
     left: 100%;
     z-index: 15;
-    overflow: hidden;
 } 
 .footer .icon {
     position: absolute;
